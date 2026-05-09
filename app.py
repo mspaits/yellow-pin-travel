@@ -9,6 +9,8 @@ app = Flask(__name__)
 def index():
     """Home page"""
 
+    print("Home page hit")
+
     return render_template('index.html')
 
 
