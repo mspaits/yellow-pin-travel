@@ -14,7 +14,7 @@
 <body>
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container py-2">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" href="/">
         <img src="static/images/yellow-pin-travel-logo-cropped.png" alt="Yellow Pin Travel logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +22,10 @@
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <div class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-          <a class="nav-link" href="#services">Services</a>
-          <a class="nav-link" href="#process">Process</a>
-          <a class="nav-link" href="#contact">Start planning</a>
-          <a class="btn btn-ypt px-4 ms-lg-2 mt-3 mt-lg-0" href="mailto:jenruno@gmail.com">Contact</a>
+          <a class="nav-link" href="/about">About</a>
+          <a class="nav-link" href="/services">Services</a>
+          <a class="nav-link" href="/">PLACEHOLDER?</a>
+          <a class="btn btn-ypt px-4 ms-lg-2 mt-3 mt-lg-0" href="/contact">Contact</a>
         </div>
       </div>
     </div>
@@ -56,10 +56,25 @@
   </main>
 
   <footer class="py-4">
+
+    <div class="container d-flex flex-column flex-md-row justify-content-center gap-2 small text-muted-ypt">
+      <div>
+          <a class="nav-link" href="/about">About</a>
+          <a class="nav-link" href="/services">Services</a>
+          <a class="nav-link" href="/contact">Contact</a>
+      </div>
+      <div>
+          <a class="nav-link" href="/privacy">Privacy Policy</a>
+          <a class="nav-link" href="/terms">Terms-Conditions</a>
+          <a class="nav-link" href="/accessibility">Accessibility Statement</a>
+      </div>
+    </div>
+
     <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 small text-muted-ypt">
       <span>&copy; 2026 Yellow Pin Travel. All rights reserved.</span>
       <span>Travel booking | Credit card miles planning</span>
     </div>
+
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
