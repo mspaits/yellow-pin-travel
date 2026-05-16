@@ -69,20 +69,9 @@
       position: relative;
       overflow: hidden;
       min-height: calc(100vh - 84px);
-      background:
-        linear-gradient(rgba(18, 18, 18, 0.06) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(18, 18, 18, 0.06) 1px, transparent 1px),
-        linear-gradient(135deg, #fffdf8 0%, #fff7df 48%, #ffffff 100%);
+      background: var(--ypt-paper);
       background-size: 76px 76px, 76px 76px, auto;
       border-bottom: 1px solid var(--ypt-line);
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, transparent 0%, rgba(255, 253, 248, 0.96) 92%);
-      pointer-events: none;
     }
 
     .hero .container {
@@ -118,6 +107,10 @@
       font-family: Georgia, "Times New Roman", serif;
       letter-spacing: 0;
     }
+
+    /*h3 {
+      min-height: 70px;
+    }*/
 
     .display-title {
       max-width: 760px;
