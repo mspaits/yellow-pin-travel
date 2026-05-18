@@ -250,6 +250,12 @@
       color: var(--ypt-muted);
     }
 
+    .service-img {
+      height: 280px;
+      width: 100%;
+      object-fit: contain;
+    }
+
     @media (max-width: 991.98px) {
       .hero {
         min-height: auto;
