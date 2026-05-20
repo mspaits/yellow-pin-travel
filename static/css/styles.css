@@ -53,20 +53,6 @@
       box-shadow: 0 14px 32px rgba(18, 18, 18, 0.14);
     }
 
-    .btn-pin-ypt {
-      --bs-btn-color: #ffffff;
-      --bs-btn-bg: var(--ypt-ink);
-      --bs-btn-border-color: var(--ypt-ink);
-      --bs-btn-hover-color: #000000;
-      --bs-btn-hover-bg: var(--ypt-yellow);
-      --bs-btn-hover-border-color: var(--ypt-yellow);
-      --bs-btn-active-bg: #000000;
-      --bs-btn-active-border-color: #000000;
-      border-radius: 999px;
-      font-weight: 300;
-      box-shadow: 0 14px 32px rgba(18, 18, 18, 0.14);
-    }
-
     .btn-outline-ypt {
       --bs-btn-color: var(--ypt-ink);
       --bs-btn-border-color: var(--ypt-ink);
