@@ -12,8 +12,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY --chown=app:app . .
 
-EXPOSE 8000
+EXPOSE 8080
 
 USER app
 
-CMD ["gunicorn", "-w", "4", "-b", "0:8000", "app:app"]
+CMD ["gunicorn", "-w", "4", "-b", "0:8080", "app:app"]

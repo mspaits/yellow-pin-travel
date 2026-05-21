@@ -242,6 +242,14 @@
       object-fit: contain;
     }
 
+    .service-img-points {
+      height: 300px;
+      width: 100%;
+      object-fit: contain;
+      margin-top: -10px;
+      margin-bottom: -10px;
+    }
+
     @media (max-width: 991.98px) {
       .hero {
         min-height: auto;
