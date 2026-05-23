@@ -4,8 +4,7 @@
       --ypt-paper: #fffdf8;
       --ypt-soft: #f8f1df;
       --ypt-line: #e8ddc8;
-      --ypt-yellow: #ffd45c;
-      --ypt-yellow-dark: #d6a900;
+      --ypt-yellow: #f4c542;
     }
 
     html {
@@ -125,6 +124,8 @@
       letter-spacing: 0;
     }
 
+    /* <weight>: Use a value from 200 to 800 */
+    
     .manrope-title {
       font-family: "Manrope", sans-serif;
       font-optical-sizing: auto;
@@ -132,16 +133,15 @@
       font-style: normal;
     }
 
-    .hedvig-letters-serif-title {
-      font-family: "Hedvig Letters Serif", serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-    }
+    /* <weight>: Use a value from 100 to 900 */
 
-    /*h3 {
-      min-height: 70px;
-    }*/
+    .noto-serif-display-<uniquifier> {
+      font-family: "Noto Serif Display", serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
 
     .display-title {
       max-width: 760px;
@@ -222,7 +222,7 @@
       border-bottom: 1px solid var(--ypt-line);
     }
 
-    .cta-section {
+    .cta-section, .about-section {
       background: var(--ypt-soft);
     }
 
