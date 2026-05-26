@@ -298,7 +298,7 @@
 
     @media (min-width: 992px) {
       .home-help-img {
-        width: 75%;
+        width: 65%;
       }
     }
 
@@ -309,5 +309,18 @@
     @media (min-width: 576px) {
       .about-image {
         width: 50%;
+      }
+    }
+
+    .email-btn {
+      max-width: 100%;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 440px) {
+      .email-btn {
+        font-size: 1rem;
+        padding-left: 0.9rem !important;
+        padding-right: 0.9rem !important;
       }
     }
