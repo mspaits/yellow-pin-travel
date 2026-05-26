@@ -1,17 +1,12 @@
-const imageList = [
-    "static/images/rand_stock/object 3 pin.png",
-    "static/images/rand_stock/object 4 pin.png",
-    "static/images/rand_stock/object 5 pin.png",
-];
+fetch('/picsapi')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
 
+        const randInt = Math.floor(Math.random() * data.length);
+        let image = data[randInt];
 
-const randInt = Math.floor(Math.random() * imageList.length);
-console.log("Printing to console");
-console.log(randInt);
-
-let image = imageList[randInt];
-console.log(image);
-
-const picTag = document.getElementById('rotatingImage');
-console.log(picTag);
-picTag.src = image;
+        const picTag = document.getElementById('rotatingImage');
+        console.log(picTag);
+        picTag.src = image;
+});

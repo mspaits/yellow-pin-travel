@@ -1,5 +1,7 @@
 """Yellow Pin Travel Website"""
 
+import os
+import json
 from flask import Flask, redirect, render_template, request
 
 app = Flask(__name__)
@@ -53,6 +55,21 @@ def accessability():
 
     return render_template('accessibility.html')
 
+
+@app.route("/picsapi")
+def picsapi():
+    """API route to send img file paths and names"""
+
+    path = "static/images/rand_stock"
+    file_list = os.listdir(path)
+    
+    path_list = []
+    for file in file_list:
+        path_list.append(os.path.join(path, file))
+
+    json_list = json.dumps(path_list)
+
+    return json_list
 
 if __name__ == "__main__":
     app.run(debug=True)
