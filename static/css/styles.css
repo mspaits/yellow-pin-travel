@@ -292,4 +292,22 @@
       }
     }
 
-  
+    .home-help-img {
+      width: 100%;
+    }
+
+    @media (min-width: 992px) {
+      .home-help-img {
+        width: 75%;
+      }
+    }
+
+    .about-image {
+      width: 80%;
+    }
+
+    @media (min-width: 576px) {
+      .about-image {
+        width: 50%;
+      }
+    }

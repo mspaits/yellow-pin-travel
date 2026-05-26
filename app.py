@@ -62,7 +62,7 @@ def picsapi():
 
     path = "static/images/rand_stock"
     file_list = os.listdir(path)
-    
+
     path_list = []
     for file in file_list:
         path_list.append(os.path.join(path, file))
@@ -70,6 +70,7 @@ def picsapi():
     json_list = json.dumps(path_list)
 
     return json_list
+
 
 if __name__ == "__main__":
     app.run(debug=True)
