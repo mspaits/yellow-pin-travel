@@ -2,7 +2,7 @@
 
 import os
 import json
-from flask import Flask, redirect, render_template, request
+from flask import Flask, redirect, render_template, request, send_from_directory
 
 app = Flask(__name__)
 
@@ -54,6 +54,13 @@ def accessability():
     """Accessibility page"""
 
     return render_template('accessibility.html')
+
+
+@app.route("/sitemap.xml")
+def sitemap():
+    """Sitemap for search engines"""
+
+    return send_from_directory(app.root_path, "sitemap.xml", mimetype="application/xml")
 
 
 @app.route("/picsapi")
