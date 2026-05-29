@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Sitemap: https://yellowpintravel.com/sitemap.xml
+

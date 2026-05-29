@@ -63,6 +63,13 @@ def sitemap():
     return send_from_directory(app.root_path, "sitemap.xml", mimetype="application/xml")
 
 
+@app.route("/robots.txt")
+def robotstxt():
+    """Robots.txt for search engines"""
+
+    return send_from_directory(app.root_path, "robots.txt", mimetype="text/plain")
+
+
 @app.route("/picsapi")
 def picsapi():
     """API route to send img file paths and names"""
