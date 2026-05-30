@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 :root {
       --ypt-ink: #121212;
       --ypt-muted: #6d6960;
@@ -284,6 +286,11 @@
       object-fit: contain;
       margin-top: -10px;
       margin-bottom: -10px;
+    }
+
+    .bi {
+      font-size: 3rem;
+      color: var(--ypt-yellow);
     }
 
     @media (max-width: 991.98px) {
