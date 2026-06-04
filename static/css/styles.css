@@ -288,8 +288,39 @@
       margin-bottom: -10px;
     }
 
-    .bi {
+    .pin-icon-lg {
       font-size: 3rem;
+      color: var(--ypt-yellow);
+    }
+
+    .pin-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .pin-list li {
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .pin-list li::before {
+      content: "\F3E8";
+      font-family: "bootstrap-icons";
+      position: absolute;
+      left: 0;
+      color: var(--ypt-yellow);
+    }
+
+    tr > td:first-child {
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    tr > td:first-child::before {
+      content: "\F3E8";
+      font-family: "bootstrap-icons";
+      position: absolute;
+      left: 0;
       color: var(--ypt-yellow);
     }
 
@@ -335,3 +366,4 @@
         padding-right: 0.9rem !important;
       }
     }
+
