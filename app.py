@@ -2,7 +2,7 @@
 
 import os
 import json
-from flask import Flask, redirect, render_template, request, send_from_directory
+from flask import Flask, render_template, send_from_directory
 
 app = Flask(__name__)
 
