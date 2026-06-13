@@ -6,7 +6,6 @@ from flask import Flask, render_template, send_from_directory
 
 import base64
 from email.message import EmailMessage
-import google.auth
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
