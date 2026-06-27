@@ -335,12 +335,12 @@
     }
 
     .home-help-img {
-      width: 100%;
+      width: 80%;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       .home-help-img {
-        width: 60%;
+        width: 50%;
       }
     }
 
