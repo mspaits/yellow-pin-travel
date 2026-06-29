@@ -340,7 +340,13 @@
 
     @media (min-width: 1200px) {
       .home-help-img {
-        width: 50%;
+        width: 55%;
+      }
+    }
+
+    @media (min-width: 1400px) {
+      .home-help-img {
+        width: 45%;
       }
     }
 
