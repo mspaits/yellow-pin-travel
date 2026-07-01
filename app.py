@@ -24,6 +24,7 @@ SCOPES = ["https://www.googleapis.com/auth/gmail.send"]
 #    get_email_creds()
 #    gmail_send_message_jen()
 
+# Test comment for branch commit
 
 def get_email_creds():
     """Gets gmail API authentication token."""
@@ -122,6 +123,13 @@ def contact():
     """Contact page"""
 
     return render_template('contact.html')
+
+
+@app.route("/thank-you")
+def thank_you():
+    """Thank you page"""
+
+    return render_template('thank-you.html')
 
 
 @app.route("/privacy")
