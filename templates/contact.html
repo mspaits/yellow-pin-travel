@@ -12,10 +12,12 @@
 <div class="container mb-5">
     <div class="row justify-content-center mx-1">
         <div class="col-lg-8 cta-panel shadow text-start">
-            <form action="https://api.web3forms.com/submit" method="POST" id="form">
+            <form action="https://api.web3forms.com/submit" method="POST">
                 <div class="m-3">
                     
                     <input type="hidden" name="access_key" value="6578d89d-1880-4523-b4c1-a48812901f06">
+
+                    <input type="hidden" name="redirect" value="https://yellowpintravel.com/thank-you">
                     
                     <label for="name" class="form-label mt-2">Name</label>
                     <input type="text" class="form-control mb-4 border-top-0 border-start-0 border-end-0 rounded-0 bg-transparent" id="name" name="name" placeholder="Your name" autofocus>
@@ -26,7 +28,7 @@
                     <label for="message" class="form-label">Message</label>
                     <textarea class="form-control mb-4 border-top-0 border-start-0 border-end-0 rounded-0 bg-transparent" name="message" placeholder="Please let me know how I can help your travels"></textarea>
 
-                    <div class="h-captcha mb-3" data-captcha="true"></div>
+                    <!-- <div class="h-captcha mb-3" data-captcha="true"></div> -->
                 
                     <button type="submit" class="btn btn-ypt px-4 ms-lg-2 mt-3 mt-lg-0 mb-2">Submit</button>
 

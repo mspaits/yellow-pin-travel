@@ -125,6 +125,13 @@ def contact():
     return render_template('contact.html')
 
 
+@app.route("/thank-you")
+def thank_you():
+    """Thank you page"""
+
+    return render_template('thank-you.html')
+
+
 @app.route("/privacy")
 def privacy():
     """Privacy page"""
