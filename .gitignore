@@ -39,3 +39,6 @@ venv/
 # Database
 data/*.db
 *.db
+
+# Unused modules
+gmail_send_email.py

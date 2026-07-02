@@ -350,6 +350,12 @@
       }
     }
 
+    @media (min-width: 2000px) {
+      .home-help-img {
+        width: 35%;
+      }
+    }
+
     .about-image {
       width: 80%;
     }
